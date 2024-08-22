@@ -1,8 +1,8 @@
 import java.util.*;
 
-class Kruskal {
+public class Kruskal {
     
-    public class Edge {
+    public static class Edge {
         public int u;
         public int v;
         public int w;
@@ -26,7 +26,7 @@ class Kruskal {
         }
     }
 
-    public class EdgeComparator implements Comparator<Edge> {
+    public static class EdgeComparator implements Comparator<Edge> {
         public int compare(Edge e1, Edge e2) {
             if (e1.w < e2.w) {
                 return -1;
